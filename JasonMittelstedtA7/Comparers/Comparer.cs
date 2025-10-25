@@ -13,12 +13,12 @@ namespace JasonMittelstedtA7.Comparers
         {
             if (x == null || y == null) return 0;
 
-            int makeCompare = string.Compare(x.Make, y.Make, StringComparison.OrdinalIgnoreCase);
+            int makeCompare = string.Compare(x.make, y.make, StringComparison.OrdinalIgnoreCase);
             if (makeCompare != 0)
                 return makeCompare;
 
             // Sort by price ascending (change to descending if preferred)
-            return x.Price.CompareTo(y.Price);
+            return x.price.CompareTo(y.price);
         }
     }
 }
